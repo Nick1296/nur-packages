@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     longDescription = "This package has most of the feature working, testing might be needed for login animations and sddm theme";
     branch = "master";
     license = lib.licenses.gpl2Only;
-    platforms = lib.platform.linux;
-    sourceProvenance = lib.sourceTypes.fromSource;
+    platforms = [ lib.platform.linux ];
+    sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
 }
