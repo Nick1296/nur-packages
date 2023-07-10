@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, gzip, fd, coreutils }:
+{ stdenv, fetchFromGitHub, gzip, fd, coreutils, lib }:
 stdenv.mkDerivation rec {
   pname = "sweet-theme";
   version = "11062023";

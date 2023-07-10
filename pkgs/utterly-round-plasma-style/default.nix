@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, coreutils, gzip, fd }:
+{ stdenv, fetchFromGitHub, coreutils, gzip, fd, lib }:
 stdenv.mkDerivation rec {
   pname = "utterly-round-plasma-style";
   version = "2.1";

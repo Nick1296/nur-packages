@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, gzip, fd, coreutils, gnused }:
+{ stdenv, fetchFromGitHub, gzip, fd, coreutils, gnused, lib }:
 stdenv.mkDerivation rec {
   pname = "utterly-sweet-plasma-theme";
   version = "2.1";
