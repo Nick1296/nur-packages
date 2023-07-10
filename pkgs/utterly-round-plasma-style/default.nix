@@ -42,7 +42,6 @@ stdenv.mkDerivation rec {
     downloadPage = "https://github.com/HimDek/Utterly-Round-Plasma-Style";
     branch = "master";
     license = lib.licenses.gpl2Only;
-    platforms = [ lib.platforms.linux ];
     sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
 }

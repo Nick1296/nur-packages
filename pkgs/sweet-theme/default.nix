@@ -44,7 +44,6 @@ stdenv.mkDerivation rec {
     longDescription = "This package uses the Nova branch, that includes Qt and sddm themes";
     branch = "nova";
     license = lib.licenses.gpl3Only;
-    platforms = [ lib.platforms.linux ];
     sourceProvenance = [ lib.sourceTypes.fromSource ];
   };
 }

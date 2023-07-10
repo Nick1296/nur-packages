@@ -99,7 +99,6 @@ let
       description = "Xilinx Vivado WebPack Edition";
       homepage = "https://www.xilinx.com/products/design-tools/vivado.html";
       license = lib.licenses.unfree;
-      platforms = [ lib.platforms.x86_64-linux ];
       mainProgram = "vivado";
       sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
     };
