@@ -52,4 +52,14 @@ stdenv.mkDerivation rec {
     rev = "4bb007e865d559de8dd43bbffb93778ea136f957";
     sha256 = "sha256-oEyf6FI5XSjXPZjzBiGypwZY89ulhwAwk9QIJ3pMw/M=";
   };
+  meta = with lib; {
+    description = "A Dark Bluish and Blurry Global theme for Plasma 5";
+    homepage = "https://himdek.com/Utterly-Sweet-Plasma/";
+    downloadPage = "https://github.com/HimDek/Utterly-Sweet-Plasma";
+    longDescription = "This package has most of the feature working, testing might be needed for login animations and sddm theme";
+    branch = "master";
+    license = lib.licenses.gpl2Only;
+    platforms = lib.platform.linux;
+    sourceProvenance = lib.sourceTypes.fromSource;
+  };
 }

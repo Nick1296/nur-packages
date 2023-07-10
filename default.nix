@@ -17,7 +17,7 @@
   vivado-2017-4 = pkgs.callPackage ./pkgs/vivado-2017-4 { };
   sweet-theme = pkgs.callPackage ./pkgs/sweet-theme { };
   utterly-round-plasma-style = pkgs.callPackage ./pkgs/utterly-round-plasma-style { };
-  utterly-round-plasma-theme = pkgs.callPackage ./pkgs/utterly-sweet-plasma-theme { };
+  utterly-sweet-plasma-theme = pkgs.callPackage ./pkgs/utterly-sweet-plasma-theme { };
   #example-package = pkgs.callPackage ./pkgs/example-package { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...

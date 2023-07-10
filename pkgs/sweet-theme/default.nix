@@ -37,4 +37,14 @@ stdenv.mkDerivation rec {
     rev = "c4a4c0ce8a67569fe6440b876fc667ead14b49ce";
     sha256 = "sha256-KLfTwL2dZa9tcmSTbnOwtP7uMpDnyNcFoMCxcSoLU6E=";
   };
+  meta = with lib; {
+    description = "Light and dark colorful Gtk3.20+ theme";
+    homepage = "www.gnome-look.org/p/1253385/";
+    downloadPage = "https://github.com/EliverLara/Sweet";
+    longDescription = "This package uses the Nova branch, that includes Qt and sddm themes";
+    branch = "nova";
+    license = lib.licenses.gpl3Only;
+    platforms = lib.platform.linux;
+    sourceProvenance = lib.sourceTypes.fromSource;
+  };
 }
