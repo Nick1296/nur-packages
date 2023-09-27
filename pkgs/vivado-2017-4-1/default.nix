@@ -3,7 +3,11 @@
 , libX11, libXrender, libxcb, libXext, libXtst, libXi, libxcrypt, glib, freetype
 , gtk2, buildFHSUserEnv, gcc, ncurses5, glibc, gperftools, fontconfig
 , liberation_ttf, libuuid, writeTextFile }:
-
+# uses the already existing 2017.4 config and hinf from these sources:
+# https://blog.kotatsu.dev/posts/2021-09-14-vivado-on-nixos/
+# https://discourse.nixos.org/t/fhs-env-for-installing-xilinx/13150
+# https://github.com/nix-community/nix-environments
+# https://docs.xilinx.com/v/u/2017.4-English/ug973-vivado-release-notes-install-license
 let
   extractedSource = stdenv.mkDerivation rec {
     name = "vivado-2017.4_extracted_setup";
