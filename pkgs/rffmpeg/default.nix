@@ -46,6 +46,8 @@ python3Packages.buildPythonApplication rec {
     wrapProgram $out/bin/rffmpeg \
      --set-default RFFMPEG_CONFIG ${rffmpeg_config} \
      --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath dependencies} 
+    #independetnly wrap ffmpeg and ffprobe so their executable name is not rffmpeg.
+    # this avoids this issue: https://github.com/joshuaboniface/rffmpeg/issues/94
     wrapProgram $out/bin/ffmpeg \
      --set-default RFFMPEG_CONFIG ${rffmpeg_config} \
      --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath dependencies} 
